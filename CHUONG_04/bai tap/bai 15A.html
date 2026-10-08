@@ -1,0 +1,28 @@
+<HTML>
+    <HEAD>
+    <TITLE>bai tap 15A</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <SCRIPT language="JavaScript">
+    function CapNhat()
+    {
+       
+        document.title = document.f.TieuDe.value; 
+        document.bgColor = document.f.MauNen.value; 
+        document.fgColor = document.f.MauChu.value; 
+        window.status = document.f.TrangThai.value; 
+    }
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+        <h2>Nhập vào các giá trị và nhấn nút Thay đổi</h2>
+    
+        <FORM name="f">
+            Tiêu đề: <INPUT type="text" name="TieuDe" value="Tiêu đề mới"><BR><BR>
+            Màu nền: <INPUT type="text" name="MauNen" value="blue"><BR><BR>
+            Màu chữ: <INPUT type="text" name="MauChu" value="yellow"><BR><BR>
+            Trạng thái: <INPUT type="text" name="TrangThai" value="Xin chào!"><BR><BR>
+            
+            <INPUT type="button" name="ThayDoi" value="Thay đổi" onClick="CapNhat();">
+        </FORM>
+    </BODY>
+    </HTML>

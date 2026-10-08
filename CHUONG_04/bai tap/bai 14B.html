@@ -1,0 +1,46 @@
+<HTML>
+    <HEAD>
+        <TITLE>Bài tập JavaScript 14B</TITLE>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script language="JavaScript">
+            function TinhToan() {
+                // Lấy giá trị từ các ô nhập trong form 'Form1'
+                var sh1 = parseFloat(document.Form1.SoHang1.value);
+                var sh2 = parseFloat(document.Form1.SoHang2.value);
+                var kq = 0;
+    
+               
+                if (document.Form1.PhepTinh[0].checked) {
+                    kq = sh1 + sh2; // Cộng
+                } else if (document.Form1.PhepTinh[1].checked) {
+                    kq = sh1 - sh2; // Trừ
+                } else if (document.Form1.PhepTinh[2].checked) {
+                    kq = sh1 * sh2; // Nhân
+                } else if (document.Form1.PhepTinh[3].checked) {
+                    kq = sh1 / sh2; // Chia
+                }
+
+                document.Form1.KetQua.value = kq;
+            }
+        </script>
+    </HEAD>
+    <BODY>
+        <h2>Chương trình tính toán số học bằng Radio Button</h2>
+    
+    
+        <FORM name="Form1">
+            Số hạng 1: <INPUT type="text" name="SoHang1"><BR><BR>
+            Số hạng 2: <INPUT type="text" name="SoHang2"><BR><BR>
+    
+            <b>Chọn phép tính:</b><BR>
+            <INPUT type="radio" name="PhepTinh" value="Cong" checked> Cộng<BR>
+            <INPUT type="radio" name="PhepTinh" value="Tru"> Trừ<BR>
+            <INPUT type="radio" name="PhepTinh" value="Nhan"> Nhân<BR>
+            <INPUT type="radio" name="PhepTinh" value="Chia"> Chia<BR><BR>
+    
+            <INPUT type="button" value="Tính" onClick="TinhToan()"><BR><BR>
+    
+            Kết quả: <INPUT type="text" name="KetQua">
+        </FORM>
+    </BODY>
+    </HTML>

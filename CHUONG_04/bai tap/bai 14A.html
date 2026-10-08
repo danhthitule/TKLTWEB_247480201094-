@@ -1,0 +1,20 @@
+<HTML>
+    <HEAD>
+        <TITLE>bai tap 14A</TITLE>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </HEAD>
+    <BODY>
+        <h2>Chương trình tính toán số học đơn giản</h2>
+        Số hạng 1: <INPUT type="text" id="SoHang1" name="SoHang1"><BR><BR>
+        Số hạng 2: <INPUT type="text" id="SoHang2" name="SoHang2"><BR><BR>
+        Kết quả: <INPUT type="text" id="KetQua" name="KetQua"><BR><BR>
+        <INPUT type="button" name="Cong" value="Cộng"
+         onClick="KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value);">
+        <INPUT type="button" name="Tru" value="Trừ"
+         onClick="KetQua.value = parseFloat(SoHang1.value) - parseFloat(SoHang2.value);">
+        <INPUT type="button" name="Nhan" value="Nhân"
+         onClick="KetQua.value = parseFloat(SoHang1.value) * parseFloat(SoHang2.value);">
+        <INPUT type="button" name="Chia" value="Chia"
+         onClick="KetQua.value = parseFloat(SoHang1.value) / parseFloat(SoHang2.value);">
+    </BODY>
+    </HTML>
